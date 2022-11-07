@@ -1,0 +1,21 @@
+iris = read.csv('C:/Users/Anka/OneDrive/Documents/Statistika/iris.csv')
+View(iris)
+summary(iris)
+head(iris)
+by(iris$petal_length, iris$species, summary)
+mean(iris$sepal_length)
+var(iris$sepal_length)
+boxplot(iris$petal_length)
+
+boxplot(petal_length ~ species, data=iris, main="Petal Length", xlab="Species", ylab="Length")
+
+hist(iris$petal_length)
+hist(iris$sepal_width)
+hist(iris$sepal_width[iris$species=="setosa"])
+hist(iris$sepal_width[iris$species=="versicolor"])
+d=density(iris$petal_length)
+plot(d)
+d=density(iris$sepal_width[iris$species=="versicolor"])
+plot (d)
+
+qplot(data_)
